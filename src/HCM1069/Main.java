@@ -1,4 +1,7 @@
 package HCM1069;
+/*
+ * error,can't submit
+ */
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -10,6 +13,7 @@ public class Main {
 	public static void main(String args[]){
 		//重写Sort comparator排序
 		Comparator<Sort> comparator = new Comparator<Sort>(){
+			//重写compare方法...
 			public int compare(Sort s1,Sort s2){
 				if(s1.a != s2.a){
 					return s1.a - s2.a;
